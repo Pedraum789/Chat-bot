@@ -1,0 +1,54 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": ["Ola", "Opa", "Oi", "tudo bem"],
+      "responses": ["Oi", "Olá"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["valeu", "tchau", "Obrigado", "tks"],
+      "responses": ["Até breve", "Falou"]
+    },
+    {
+      "tag": "integrantes",
+      "patterns": [
+        "Com quantas pessoas posso fazer meu tcc?",
+        "Quantos integrantes compõe o tcc?",
+        "Quantas pessoas pode?"
+      ],
+      "responses": [
+        "Os grupos devem buscar ter 4 integrantes,  mas pode ser feita com 3 ou 5."
+      ],
+      "option" : ["Com quantas pessoas você está pensando fazer?"],
+      "verify": {
+        "verify_3": "O tamanho é menor do que o esperado, mas é possivel com um pouco de esforço :)", 
+        "verify_plus": "O tamanho é maior do que o esperado, mas da para se fazer!",
+        "verify_4": "Esse tamanho é o melhor, vá em frente!"
+      }
+    },
+    {
+      "tag": "orientador",
+      "patterns": [
+        "O que o professor orientador faz?",
+        "Qual o papel do orientador?",
+        "O que o orientador faz?"
+      ],
+      "responses": [
+        "O professor conduz o desenvolvimento do trabalho além disso ele, auxilia os alunos nos métodos de pesquisa, na busca dos resultados e na reflexão sobre os resultados obtidos, assegurar que os alunos estejam cumprindo as atividades propostas durante as aulas."
+      ]
+    },
+    {
+      "tag": "tempo",
+      "patterns": [
+        "Quanto tempo tenho para fazer?",
+        "Quanto tempo tenho?",
+        "Quando posso fazer?"
+      ],
+      "responses": [
+        "Os alunos têm dois semestres para desenvolver todas as atividades relacionadas ao trabalho.",
+        "Os alunos terão 1 ano para executar."
+      ]
+    }
+  ]
+}
